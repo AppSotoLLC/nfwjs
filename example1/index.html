@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <title>Nfw.js Example #1</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <br/>
+            <div class="form-group">
+                <input class="form-control" placeholder="Type hello world to enable button" id="TextInput1" autofocus>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" id="Button1" disabled>Button</button>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="../dist/nfw.min.js"></script>
+
+        <script src="./button-1.js"></script>
+        <script src="./text-input-1.js"></script>
+
+        <script>
+        $(document).ready(function() {
+			let appController = new nfw.AppController('myapp');
+        });
+        </script>
+    </body>
+
+</html>
