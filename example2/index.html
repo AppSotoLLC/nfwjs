@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+        <title></title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">nfw.js</a>
+                </li>
+            </ul>
+
+            <hr/>
+
+            <div class="row">
+                <div class="col-6">
+                    <h3 id="Headline"></h3>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Write a headline" id="TextInput" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" id="Button1">Post</button>
+                        <button class="btn btn-secondary" id="Button2">Clear</button>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <textarea class="form-control form-control-sm" id="Summary" rows="8" disabled></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <hr/>
+
+        </div>
+
+        <!-- jquery external dependencies -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+        <!-- design pattern dependencies -->
+        <script src="../dist/nfw.min.js"></script>
+
+        <!-- webapp -->
+        <script src="./button-1.js"></script>
+        <script src="./button-2.js"></script>
+        <script src="./text-input.js"></script>
+        <script src="./headline.js"></script>
+        <script src="./summary.js"></script>
+
+        <script>
+        $(document).ready(function() {
+
+			let controller = new nfw.AppController('myapp');
+            
+        });
+        </script>
+
+    </body>
+
+</html>

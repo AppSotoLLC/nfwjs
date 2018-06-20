@@ -1,0 +1,6 @@
+uglifyjs \
+    nfw-state-delegate.js \
+    nfw-component.js \
+    nfw-view-component.js \
+    nfw-app-controller.js \
+    --compress --output ../dist/nfw.min.js
