@@ -258,7 +258,7 @@ Nfw.js provides two component classes, `HeadlessComponent` and `ViewComponent`, 
 
 ## HeadlessComponent
 
-The `HeadlessComponent` class should be used to define behavior of background activities such as networking and data processing. The class exposes the following methods:
+The `HeadlessComponent` class should be used to define behavior of background activities such as networking and data processing. 
 
 #### initialize()
 Performs any initialization that should occur after component instantiation. This method should be overloaded in child class.
@@ -274,7 +274,20 @@ Call this method to announce state change to observing components. Parameter `st
 
 ## ViewComponent
 
-The `ViewComponent` class should be used to define behavior of tightly coupled user interface elements. The class exposes the `HeadlessComponent` class methods listed above, as well as the following additional methods:
+The `ViewComponent` class should be used to define behavior of tightly coupled user interface elements. 
+
+#### initialize()
+Performs any initialization that should occur after component instantiation. This method should be overloaded in child class.
 
 #### getElement()
 Call this method to get a jQuery object for the DOM element with which the component is coupled. Functionally equivalent to `${“#componentName”}`.
+
+#### handleStateChange(componentName, newState) 
+This method is called when any observed components change state. This method should be overloaded in child class.
+
+#### observe(componentName) 
+Call this method to begin observing another component. Returns a method for unobserving.
+
+#### setState(state) 
+Call this method to announce state change to observing components. Parameter `state` is object literal of key/value pairs that describe the component’s current state.
+
