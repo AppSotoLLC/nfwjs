@@ -8,7 +8,7 @@ This short guide will illustrate how to transform a static HTML web page into a 
 
 ## User Interface
 
-First, create a static web page `index.html` that includes Nfw.js and jQuery. This example also uses Bootstrap CSS, although it is not required. Nfw.js can be downloaded from https://github.com/AppSotoLLC/nfwjs/releases. 
+First, create a static web page `index.html` that includes Nfw.js and jQuery. This example also uses Bootstrap CSS, although it is not required. 
 
 ```html
 <!-- index.html -->
