@@ -274,7 +274,7 @@ Call this method to announce state change to observing components. Parameter `st
 
 ## ViewComponent
 
-The `ViewComponent` class should be used to define behavior of tightly coupled user interface elements. 
+The `ViewComponent` class should be used to define behavior of user interface elements. 
 
 #### initialize()
 Performs any initialization that should occur after component instantiation. This method should be overloaded in child class.
